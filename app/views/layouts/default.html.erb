@@ -6,16 +6,17 @@
     <%= stylesheet_link_tag *%w[
       application
     ] %>
-    <%= javascript_include_tag *%w[
+  <%= javascript_include_tag *%w[
       application
-    ] %>
+  ] %>
   </head>
-  <body class="layout-default">
-  <nav class="navbar navbar-fluid-top">
-    <div class="navbar-inner">
-      <div class="container-fluid">
-        <div class="container nav-collapse">
-          <ul class="nav">
+<body class="layout-default">
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
             <li><%= link_to 'What is Madlove?', '/' %></li>
             <li><%= link_to 'Get involved', '/get-involved' %></li>
             <li><%= link_to "Who's behind it", '/whos-behind-it' %></li>
@@ -27,8 +28,9 @@
       </div>
     </div>
   </nav>
-    <section id="main" role="main">
-      <%= container "content" %>
-    </section>
-  </body>
+
+  <section id="main" role="main">
+    <%= container "content" %>
+  </section>
+</body>
 </html>
