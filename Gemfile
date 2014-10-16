@@ -17,6 +17,7 @@ group :assets do
   gem 'sass-rails', github: 'guilleiguaran/sass-rails', branch: 'backport'
   gem 'bootstrap-sass', '~> 3.2.0'
   gem 'autoprefixer-rails'
+  
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -24,7 +25,14 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+  gem 'jquery-rails'
+
+group :test do
+  gem 'cucumber-rails', :require => false
+      # database_cleaner is not required, but highly recommended
+    #   gem 'database_cleaner'
+    #   end
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
