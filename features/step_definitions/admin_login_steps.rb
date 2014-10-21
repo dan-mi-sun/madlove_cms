@@ -1,20 +1,22 @@
 Given(/^that an admin exists$/) do
-  pending # express the regexp above with the code you wish you had
+  @admin = Admin.create!(:email => 'email@email.com',
+                       :password => 'password'
+                       )
 end
 
 Given(/^that an admin is on the login page$/) do
-  pending # express the regexp above with the code you wish you had
+  visit new_admin_session_path
 end
 
 When(/^an admin fills in their username$/) do
-  pending # express the regexp above with the code you wish you had
+  fill_in('Email', :with => 'email@email.com')
 end
 
 When(/^they fill in their password$/) do
-  pending # express the regexp above with the code you wish you had
+  fill_in("Password", :with => 'password')
 end
 
 Then(/^they should be logged in\.$/) do
-  pending # express the regexp above with the code you wish you had
+  click_button("Sign in")
 end
 
