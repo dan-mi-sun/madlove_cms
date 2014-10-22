@@ -17,6 +17,5 @@ When(/^they fill in their password$/) do
 end
 
 Then(/^they should be logged in\.$/) do
-  click_button("Sign in")
 end
 
