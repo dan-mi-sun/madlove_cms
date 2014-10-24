@@ -17,7 +17,7 @@ group :assets do
   gem 'sass-rails', github: 'guilleiguaran/sass-rails', branch: 'backport'
   gem 'bootstrap-sass', '~> 3.2.0'
   gem 'autoprefixer-rails'
-  
+  gem 'xray-rails' 
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
