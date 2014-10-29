@@ -26,7 +26,7 @@ group :assets do
 end
 
   gem 'jquery-rails'
-  gem 'gibbon'
+  gem 'gibbon', git: 'git://github.com/amro/gibbon.git'
 
 group :test do
   gem 'cucumber-rails', :require => false

@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/amro/gibbon.git
+  revision: 79cac9777835f89362ebbedbdb6d3de28c9ef7a7
+  specs:
+    gibbon (1.1.3)
+      httparty
+      multi_json (>= 1.3.4)
+
+GIT
   remote: git://github.com/guilleiguaran/sass-rails.git
   revision: 0393d9e1a6e4a776e61f16fb75f97971b9f4abd2
   branch: backport
@@ -88,9 +96,6 @@ GEM
     execjs (2.2.1)
     gherkin (2.12.2)
       multi_json (~> 1.3)
-    gibbon (1.1.3)
-      httparty
-      multi_json (>= 1.3.4)
     hashie (3.3.1)
     highline (1.6.21)
     hike (1.2.3)
@@ -225,7 +230,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   cucumber-rails
   database_cleaner
-  gibbon
+  gibbon!
   jquery-rails
   rails (= 3.2.16)
   sass-rails!
