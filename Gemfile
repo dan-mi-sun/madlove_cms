@@ -27,6 +27,7 @@ end
 
   gem 'jquery-rails'
   gem 'gibbon', git: 'git://github.com/amro/gibbon.git'
+  gem 'figaro'
 
 group :test do
   gem 'cucumber-rails', :require => false
