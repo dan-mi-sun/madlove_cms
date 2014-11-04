@@ -5,7 +5,7 @@ class EmailapiController < ApplicationController
 
   def subscribe
 
-    @list_id = "YOUR-LIST-ID"
+    @list_id = ENV["GIBBON_LIST_ID"] 
     gb = Gibbon::API.new
 
     gb.lists.subscribe({
